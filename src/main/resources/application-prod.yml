@@ -1,0 +1,22 @@
+server:
+  port: 8070
+
+swagger:
+  production: false
+  basic:
+    enable: true
+    usrname: admin
+    password: 123admin
+
+
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shakesbit?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&requireSSL=false
+    username: shakesbit
+    password: CrrBW7YbGbYKRe4Y
+  sql:
+    init:
+      #schema-locations: classpath:db/schema-h2.sql
+      #data-locations: classpath:db/data-h2.sql
